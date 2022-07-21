@@ -1,0 +1,19 @@
+.error-page{
+	background-color: #f7f7f7;
+}
+
+
+.content-error{
+	text-align: center;
+}
+
+.code-error{
+	color: #999;
+	font-family: monospace;
+}
+
+.message-error{
+	font-family: monospace;
+    font-size: larger;
+    color: #999;
+}

@@ -1,0 +1,2081 @@
+2019-06-07 22:02:31 [-][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\console\ErrorHandler::errorAction in G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 G:\Proyectos\localhost\credimart\vendor\mdmsoft\yii2-admin\components\AccessControl.php(98): yii\base\Component->__get('errorAction')
+#1 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\ActionFilter.php(73): mdm\admin\components\AccessControl->isActive(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(700): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Controller.php(145): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#6 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#7 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#8 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 G:\Proyectos\localhost\credimart\yii(23): yii\base\Application->run()
+#12 {main}
+2019-06-07 22:02:30 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'CGITIC049281L'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\eleazar.garcia'
+    'LOCALAPPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Local'
+    'LOGONSERVER' => '\\\\W-APPINTRADNS04'
+    'MYSQLCONNECTOR_ASSEMBLIESPATH' => 'C:\\Program Files (x86)\\MySQL\\MySQL Connector Net 6.9.12\\Assemblies\\v4.5.2'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\INEGI\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Users\\eleazar.garcia\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\xampp\\php;C:\\xampp\\mysql\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 19 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '21'
+    'PROCESSOR_REVISION' => '1301'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'UATDATA' => 'C:\\Windows\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77'
+    'USERDNSDOMAIN' => 'INEGI.GOB.MX'
+    'USERDOMAIN' => 'INEGI'
+    'USERDOMAIN_ROAMINGPROFILE' => 'INEGI'
+    'USERNAME' => 'ELEAZAR.GARCIA'
+    'USERPROFILE' => 'C:\\Users\\eleazar.garcia'
+    'VS150PROCOMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Professional\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'G:\\Proyectos\\localhost\\credimart\\'
+    'PHP_SELF' => 'G:\\Proyectos\\localhost\\credimart\\yii'
+    'SCRIPT_NAME' => 'G:\\Proyectos\\localhost\\credimart\\yii'
+    'SCRIPT_FILENAME' => 'G:\\Proyectos\\localhost\\credimart\\yii'
+    'PATH_TRANSLATED' => 'G:\\Proyectos\\localhost\\credimart\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1559937750.8338
+    'REQUEST_TIME' => 1559937750
+    'argv' => [
+        0 => 'G:\\Proyectos\\localhost\\credimart\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@mdm/admin/migrations'
+    ]
+    'argc' => 3
+]
+2019-06-07 22:02:36 [-][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\console\ErrorHandler::errorAction in G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 G:\Proyectos\localhost\credimart\vendor\mdmsoft\yii2-admin\components\AccessControl.php(98): yii\base\Component->__get('errorAction')
+#1 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\ActionFilter.php(73): mdm\admin\components\AccessControl->isActive(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(700): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Controller.php(145): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#6 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#7 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#8 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 G:\Proyectos\localhost\credimart\yii(23): yii\base\Application->run()
+#12 {main}
+2019-06-07 22:02:36 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'CGITIC049281L'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\eleazar.garcia'
+    'LOCALAPPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Local'
+    'LOGONSERVER' => '\\\\W-APPINTRADNS04'
+    'MYSQLCONNECTOR_ASSEMBLIESPATH' => 'C:\\Program Files (x86)\\MySQL\\MySQL Connector Net 6.9.12\\Assemblies\\v4.5.2'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\INEGI\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Users\\eleazar.garcia\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\xampp\\php;C:\\xampp\\mysql\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 19 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '21'
+    'PROCESSOR_REVISION' => '1301'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'UATDATA' => 'C:\\Windows\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77'
+    'USERDNSDOMAIN' => 'INEGI.GOB.MX'
+    'USERDOMAIN' => 'INEGI'
+    'USERDOMAIN_ROAMINGPROFILE' => 'INEGI'
+    'USERNAME' => 'ELEAZAR.GARCIA'
+    'USERPROFILE' => 'C:\\Users\\eleazar.garcia'
+    'VS150PROCOMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Professional\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1559937756.1941
+    'REQUEST_TIME' => 1559937756
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@mdm/admin/migrations'
+    ]
+    'argc' => 3
+]
+2019-06-07 22:02:43 [-][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\console\ErrorHandler::errorAction in G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 G:\Proyectos\localhost\credimart\vendor\mdmsoft\yii2-admin\components\AccessControl.php(98): yii\base\Component->__get('errorAction')
+#1 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\ActionFilter.php(73): mdm\admin\components\AccessControl->isActive(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(700): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Controller.php(145): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#6 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#7 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#8 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 G:\Proyectos\localhost\credimart\yii(23): yii\base\Application->run()
+#12 {main}
+2019-06-07 22:02:43 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'CGITIC049281L'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\eleazar.garcia'
+    'LOCALAPPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Local'
+    'LOGONSERVER' => '\\\\W-APPINTRADNS04'
+    'MYSQLCONNECTOR_ASSEMBLIESPATH' => 'C:\\Program Files (x86)\\MySQL\\MySQL Connector Net 6.9.12\\Assemblies\\v4.5.2'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\INEGI\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Users\\eleazar.garcia\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\xampp\\php;C:\\xampp\\mysql\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 19 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '21'
+    'PROCESSOR_REVISION' => '1301'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'UATDATA' => 'C:\\Windows\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77'
+    'USERDNSDOMAIN' => 'INEGI.GOB.MX'
+    'USERDOMAIN' => 'INEGI'
+    'USERDOMAIN_ROAMINGPROFILE' => 'INEGI'
+    'USERNAME' => 'ELEAZAR.GARCIA'
+    'USERPROFILE' => 'C:\\Users\\eleazar.garcia'
+    'VS150PROCOMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Professional\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1559937763.0196
+    'REQUEST_TIME' => 1559937763
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@mdm/admin/migrations'
+    ]
+    'argc' => 3
+]
+2019-06-07 22:23:39 [-][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\console\ErrorHandler::errorAction in G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 G:\Proyectos\localhost\credimart\vendor\mdmsoft\yii2-admin\components\AccessControl.php(98): yii\base\Component->__get('errorAction')
+#1 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\ActionFilter.php(73): mdm\admin\components\AccessControl->isActive(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Component.php(627): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(700): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Controller.php(145): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#6 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#7 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#8 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#9 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#10 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 G:\Proyectos\localhost\credimart\yii(23): yii\base\Application->run()
+#12 {main}
+2019-06-07 22:23:39 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'CGITIC049281L'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\eleazar.garcia'
+    'LOCALAPPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Local'
+    'LOGONSERVER' => '\\\\W-APPINTRADNS04'
+    'MYSQLCONNECTOR_ASSEMBLIESPATH' => 'C:\\Program Files (x86)\\MySQL\\MySQL Connector Net 6.9.12\\Assemblies\\v4.5.2'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\INEGI\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Users\\eleazar.garcia\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\xampp\\php;C:\\xampp\\mysql\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 19 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '21'
+    'PROCESSOR_REVISION' => '1301'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'UATDATA' => 'C:\\Windows\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77'
+    'USERDNSDOMAIN' => 'INEGI.GOB.MX'
+    'USERDOMAIN' => 'INEGI'
+    'USERDOMAIN_ROAMINGPROFILE' => 'INEGI'
+    'USERNAME' => 'ELEAZAR.GARCIA'
+    'USERPROFILE' => 'C:\\Users\\eleazar.garcia'
+    'VS150PROCOMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Professional\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1559939019.6607
+    'REQUEST_TIME' => 1559939019
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@mdm/admin/migrations'
+    ]
+    'argc' => 3
+]
+2019-06-13 18:42:03 [-][-][-][error][Error] Error: Class 'console\controllers\VerbFilter' not found in G:\Proyectos\localhost\credimart\console\controllers\CronController.php:16
+Stack trace:
+#0 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Component.php(733): console\controllers\CronController->behaviors()
+#1 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Component.php(603): yii\base\Component->ensureBehaviors()
+#2 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Controller.php(155): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('message', Array)
+#5 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('message', Array)
+#6 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('cron/message', Array)
+#7 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('cron/message', Array)
+#8 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 G:\Proyectos\localhost\credimart\yii(23): yii\base\Application->run()
+#10 {main}
+2019-06-13 18:42:03 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'CGITIC049281L'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\eleazar.garcia'
+    'LOCALAPPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Local'
+    'LOGONSERVER' => '\\\\W-APPINTRADNS03'
+    'MYSQLCONNECTOR_ASSEMBLIESPATH' => 'C:\\Program Files (x86)\\MySQL\\MySQL Connector Net 6.9.12\\Assemblies\\v4.5.2'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\INEGI\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Users\\eleazar.garcia\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\xampp\\php;C:\\xampp\\mysql\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 19 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '21'
+    'PROCESSOR_REVISION' => '1301'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'UATDATA' => 'C:\\Windows\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77'
+    'USERDNSDOMAIN' => 'INEGI.GOB.MX'
+    'USERDOMAIN' => 'INEGI'
+    'USERDOMAIN_ROAMINGPROFILE' => 'INEGI'
+    'USERNAME' => 'ELEAZAR.GARCIA'
+    'USERPROFILE' => 'C:\\Users\\eleazar.garcia'
+    'VS150PROCOMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Professional\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1560444123.7509
+    'REQUEST_TIME' => 1560444123
+    'argv' => [
+        0 => 'yii'
+        1 => 'cron/message'
+    ]
+    'argc' => 2
+]
+2019-06-13 18:42:11 [-][-][-][error][Error] Error: Class 'console\controllers\VerbFilter' not found in G:\Proyectos\localhost\credimart\console\controllers\CronController.php:16
+Stack trace:
+#0 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Component.php(733): console\controllers\CronController->behaviors()
+#1 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Component.php(603): yii\base\Component->ensureBehaviors()
+#2 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Controller.php(155): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('message', Array)
+#5 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('message', Array)
+#6 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('cron/message', Array)
+#7 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('cron/message', Array)
+#8 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 G:\Proyectos\localhost\credimart\yii(23): yii\base\Application->run()
+#10 {main}
+2019-06-13 18:42:11 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'CGITIC049281L'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\eleazar.garcia'
+    'LOCALAPPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Local'
+    'LOGONSERVER' => '\\\\W-APPINTRADNS03'
+    'MYSQLCONNECTOR_ASSEMBLIESPATH' => 'C:\\Program Files (x86)\\MySQL\\MySQL Connector Net 6.9.12\\Assemblies\\v4.5.2'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\INEGI\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Users\\eleazar.garcia\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\xampp\\php;C:\\xampp\\mysql\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 19 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '21'
+    'PROCESSOR_REVISION' => '1301'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'UATDATA' => 'C:\\Windows\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77'
+    'USERDNSDOMAIN' => 'INEGI.GOB.MX'
+    'USERDOMAIN' => 'INEGI'
+    'USERDOMAIN_ROAMINGPROFILE' => 'INEGI'
+    'USERNAME' => 'ELEAZAR.GARCIA'
+    'USERPROFILE' => 'C:\\Users\\eleazar.garcia'
+    'VS150PROCOMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Professional\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1560444131.0281
+    'REQUEST_TIME' => 1560444131
+    'argv' => [
+        0 => 'yii'
+        1 => 'cron/message'
+    ]
+    'argc' => 2
+]
+2019-06-13 18:43:47 [-][-][-][error][Error] Error: Class 'console\controllers\Clientes' not found in G:\Proyectos\localhost\credimart\console\controllers\CronController.php:31
+Stack trace:
+#0 [internal function]: console\controllers\CronController->actionCerrarPrestamos()
+#1 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('cerrar-prestamo...', Array)
+#4 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('cerrar-prestamo...', Array)
+#5 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('cron/cerrar-pre...', Array)
+#6 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('cron/cerrar-pre...', Array)
+#7 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 G:\Proyectos\localhost\credimart\yii(23): yii\base\Application->run()
+#9 {main}
+2019-06-13 18:43:47 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'CGITIC049281L'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\eleazar.garcia'
+    'LOCALAPPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Local'
+    'LOGONSERVER' => '\\\\W-APPINTRADNS03'
+    'MYSQLCONNECTOR_ASSEMBLIESPATH' => 'C:\\Program Files (x86)\\MySQL\\MySQL Connector Net 6.9.12\\Assemblies\\v4.5.2'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\INEGI\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Users\\eleazar.garcia\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\xampp\\php;C:\\xampp\\mysql\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 19 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '21'
+    'PROCESSOR_REVISION' => '1301'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'UATDATA' => 'C:\\Windows\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77'
+    'USERDNSDOMAIN' => 'INEGI.GOB.MX'
+    'USERDOMAIN' => 'INEGI'
+    'USERDOMAIN_ROAMINGPROFILE' => 'INEGI'
+    'USERNAME' => 'ELEAZAR.GARCIA'
+    'USERPROFILE' => 'C:\\Users\\eleazar.garcia'
+    'VS150PROCOMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Professional\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1560444227.2437
+    'REQUEST_TIME' => 1560444227
+    'argv' => [
+        0 => 'yii'
+        1 => 'cron/cerrar-prestamos'
+    ]
+    'argc' => 2
+]
+2019-06-13 18:44:40 [-][-][-][error][Error] Error: Class 'app\models\Clientes' not found in G:\Proyectos\localhost\credimart\console\controllers\CronController.php:36
+Stack trace:
+#0 [internal function]: console\controllers\CronController->actionCerrarPrestamos()
+#1 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('cerrar-prestamo...', Array)
+#4 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('cerrar-prestamo...', Array)
+#5 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('cron/cerrar-pre...', Array)
+#6 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('cron/cerrar-pre...', Array)
+#7 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 G:\Proyectos\localhost\credimart\yii(23): yii\base\Application->run()
+#9 {main}
+2019-06-13 18:44:40 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'CGITIC049281L'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\eleazar.garcia'
+    'LOCALAPPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Local'
+    'LOGONSERVER' => '\\\\W-APPINTRADNS03'
+    'MYSQLCONNECTOR_ASSEMBLIESPATH' => 'C:\\Program Files (x86)\\MySQL\\MySQL Connector Net 6.9.12\\Assemblies\\v4.5.2'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\INEGI\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Users\\eleazar.garcia\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\xampp\\php;C:\\xampp\\mysql\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 19 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '21'
+    'PROCESSOR_REVISION' => '1301'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'UATDATA' => 'C:\\Windows\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77'
+    'USERDNSDOMAIN' => 'INEGI.GOB.MX'
+    'USERDOMAIN' => 'INEGI'
+    'USERDOMAIN_ROAMINGPROFILE' => 'INEGI'
+    'USERNAME' => 'ELEAZAR.GARCIA'
+    'USERPROFILE' => 'C:\\Users\\eleazar.garcia'
+    'VS150PROCOMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Professional\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1560444280.6267
+    'REQUEST_TIME' => 1560444280
+    'argv' => [
+        0 => 'yii'
+        1 => 'cron/cerrar-prestamos'
+    ]
+    'argc' => 2
+]
+2019-06-13 18:45:37 [-][-][-][error][Error] Error: Class 'app\models\Clientes' not found in G:\Proyectos\localhost\credimart\console\controllers\CronController.php:36
+Stack trace:
+#0 [internal function]: console\controllers\CronController->actionCerrarPrestamos()
+#1 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('cerrar-prestamo...', Array)
+#4 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('cerrar-prestamo...', Array)
+#5 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('cron/cerrar-pre...', Array)
+#6 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('cron/cerrar-pre...', Array)
+#7 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 G:\Proyectos\localhost\credimart\yii(23): yii\base\Application->run()
+#9 {main}
+2019-06-13 18:45:36 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'CGITIC049281L'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\eleazar.garcia'
+    'LOCALAPPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Local'
+    'LOGONSERVER' => '\\\\W-APPINTRADNS03'
+    'MYSQLCONNECTOR_ASSEMBLIESPATH' => 'C:\\Program Files (x86)\\MySQL\\MySQL Connector Net 6.9.12\\Assemblies\\v4.5.2'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\INEGI\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Users\\eleazar.garcia\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\xampp\\php;C:\\xampp\\mysql\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 19 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '21'
+    'PROCESSOR_REVISION' => '1301'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'UATDATA' => 'C:\\Windows\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77'
+    'USERDNSDOMAIN' => 'INEGI.GOB.MX'
+    'USERDOMAIN' => 'INEGI'
+    'USERDOMAIN_ROAMINGPROFILE' => 'INEGI'
+    'USERNAME' => 'ELEAZAR.GARCIA'
+    'USERPROFILE' => 'C:\\Users\\eleazar.garcia'
+    'VS150PROCOMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Professional\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1560444336.9432
+    'REQUEST_TIME' => 1560444336
+    'argv' => [
+        0 => 'yii'
+        1 => 'cron/cerrar-prestamos'
+    ]
+    'argc' => 2
+]
+2019-06-13 19:02:47 [-][-][-][error][Error] Error: Class 'app\models\Clientes' not found in G:\Proyectos\localhost\credimart\console\controllers\CronController.php:36
+Stack trace:
+#0 [internal function]: console\controllers\CronController->actionCerrarPrestamos()
+#1 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('cerrar-prestamo...', Array)
+#4 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('cerrar-prestamo...', Array)
+#5 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('cron/cerrar-pre...', Array)
+#6 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('cron/cerrar-pre...', Array)
+#7 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 G:\Proyectos\localhost\credimart\yii(23): yii\base\Application->run()
+#9 {main}
+2019-06-13 19:02:47 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'CGITIC049281L'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\eleazar.garcia'
+    'LOCALAPPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Local'
+    'LOGONSERVER' => '\\\\W-APPINTRADNS03'
+    'MYSQLCONNECTOR_ASSEMBLIESPATH' => 'C:\\Program Files (x86)\\MySQL\\MySQL Connector Net 6.9.12\\Assemblies\\v4.5.2'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\INEGI\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Users\\eleazar.garcia\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\xampp\\php;C:\\xampp\\mysql\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 19 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '21'
+    'PROCESSOR_REVISION' => '1301'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'UATDATA' => 'C:\\Windows\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77'
+    'USERDNSDOMAIN' => 'INEGI.GOB.MX'
+    'USERDOMAIN' => 'INEGI'
+    'USERDOMAIN_ROAMINGPROFILE' => 'INEGI'
+    'USERNAME' => 'ELEAZAR.GARCIA'
+    'USERPROFILE' => 'C:\\Users\\eleazar.garcia'
+    'VS150PROCOMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Professional\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1560445367.5109
+    'REQUEST_TIME' => 1560445367
+    'argv' => [
+        0 => 'yii'
+        1 => 'cron/cerrar-prestamos'
+    ]
+    'argc' => 2
+]
+2019-06-13 19:08:09 [-][-][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'console\controllers\CronController' in file: G:\Proyectos\localhost\credimart/console/controllers/CronController.php. Namespace missing? in G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('console\\control...')
+#1 [internal function]: spl_autoload_call('console\\control...')
+#2 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(637): class_exists('console\\control...')
+#3 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(596): yii\base\Module->createControllerByID('cron')
+#4 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createController('cerrar-prestamo...')
+#5 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('cron/cerrar-pre...', Array)
+#6 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('cron/cerrar-pre...', Array)
+#7 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 G:\Proyectos\localhost\credimart\yii(23): yii\base\Application->run()
+#9 {main}
+2019-06-13 19:08:09 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'CGITIC049281L'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\eleazar.garcia'
+    'LOCALAPPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Local'
+    'LOGONSERVER' => '\\\\W-APPINTRADNS03'
+    'MYSQLCONNECTOR_ASSEMBLIESPATH' => 'C:\\Program Files (x86)\\MySQL\\MySQL Connector Net 6.9.12\\Assemblies\\v4.5.2'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\INEGI\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Users\\eleazar.garcia\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\xampp\\php;C:\\xampp\\mysql\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 19 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '21'
+    'PROCESSOR_REVISION' => '1301'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'UATDATA' => 'C:\\Windows\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77'
+    'USERDNSDOMAIN' => 'INEGI.GOB.MX'
+    'USERDOMAIN' => 'INEGI'
+    'USERDOMAIN_ROAMINGPROFILE' => 'INEGI'
+    'USERNAME' => 'ELEAZAR.GARCIA'
+    'USERPROFILE' => 'C:\\Users\\eleazar.garcia'
+    'VS150PROCOMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Professional\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1560445689.0472
+    'REQUEST_TIME' => 1560445689
+    'argv' => [
+        0 => 'yii'
+        1 => 'cron/cerrar-prestamos'
+    ]
+    'argc' => 2
+]
+2019-06-13 19:08:26 [-][-][-][error][Error] Error: Class 'app\models\Clientes' not found in G:\Proyectos\localhost\credimart\console\controllers\CronController.php:36
+Stack trace:
+#0 [internal function]: console\controllers\CronController->actionCerrarPrestamos()
+#1 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('cerrar-prestamo...', Array)
+#4 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('cerrar-prestamo...', Array)
+#5 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('cron/cerrar-pre...', Array)
+#6 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('cron/cerrar-pre...', Array)
+#7 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 G:\Proyectos\localhost\credimart\yii(23): yii\base\Application->run()
+#9 {main}
+2019-06-13 19:08:26 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'CGITIC049281L'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\eleazar.garcia'
+    'LOCALAPPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Local'
+    'LOGONSERVER' => '\\\\W-APPINTRADNS03'
+    'MYSQLCONNECTOR_ASSEMBLIESPATH' => 'C:\\Program Files (x86)\\MySQL\\MySQL Connector Net 6.9.12\\Assemblies\\v4.5.2'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\INEGI\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Users\\eleazar.garcia\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\xampp\\php;C:\\xampp\\mysql\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 19 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '21'
+    'PROCESSOR_REVISION' => '1301'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'UATDATA' => 'C:\\Windows\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77'
+    'USERDNSDOMAIN' => 'INEGI.GOB.MX'
+    'USERDOMAIN' => 'INEGI'
+    'USERDOMAIN_ROAMINGPROFILE' => 'INEGI'
+    'USERNAME' => 'ELEAZAR.GARCIA'
+    'USERPROFILE' => 'C:\\Users\\eleazar.garcia'
+    'VS150PROCOMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Professional\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1560445706.4983
+    'REQUEST_TIME' => 1560445706
+    'argv' => [
+        0 => 'yii'
+        1 => 'cron/cerrar-prestamos'
+    ]
+    'argc' => 2
+]
+2019-06-13 19:08:53 [-][-][-][error][Error] Error: Class 'app\models\Clientes' not found in G:\Proyectos\localhost\credimart\console\controllers\CronController.php:36
+Stack trace:
+#0 [internal function]: console\controllers\CronController->actionCerrarPrestamos()
+#1 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('cerrar-prestamo...', Array)
+#4 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('cerrar-prestamo...', Array)
+#5 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('cron/cerrar-pre...', Array)
+#6 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('cron/cerrar-pre...', Array)
+#7 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 G:\Proyectos\localhost\credimart\yii(23): yii\base\Application->run()
+#9 {main}
+2019-06-13 19:08:53 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'CGITIC049281L'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\eleazar.garcia'
+    'LOCALAPPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Local'
+    'LOGONSERVER' => '\\\\W-APPINTRADNS03'
+    'MYSQLCONNECTOR_ASSEMBLIESPATH' => 'C:\\Program Files (x86)\\MySQL\\MySQL Connector Net 6.9.12\\Assemblies\\v4.5.2'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\INEGI\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Users\\eleazar.garcia\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\xampp\\php;C:\\xampp\\mysql\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 19 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '21'
+    'PROCESSOR_REVISION' => '1301'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'UATDATA' => 'C:\\Windows\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77'
+    'USERDNSDOMAIN' => 'INEGI.GOB.MX'
+    'USERDOMAIN' => 'INEGI'
+    'USERDOMAIN_ROAMINGPROFILE' => 'INEGI'
+    'USERNAME' => 'ELEAZAR.GARCIA'
+    'USERPROFILE' => 'C:\\Users\\eleazar.garcia'
+    'VS150PROCOMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Professional\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1560445733.3092
+    'REQUEST_TIME' => 1560445733
+    'argv' => [
+        0 => 'yii'
+        1 => 'cron/cerrar-prestamos'
+    ]
+    'argc' => 2
+]
+2019-06-13 19:11:17 [-][-][-][error][Error] Error: Class 'app\models\Clientes' not found in G:\Proyectos\localhost\credimart\console\controllers\CronController.php:23
+Stack trace:
+#0 [internal function]: console\controllers\CronController->actionCerrarPrestamos()
+#1 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('cerrar-prestamo...', Array)
+#4 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('cerrar-prestamo...', Array)
+#5 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('cron/cerrar-pre...', Array)
+#6 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('cron/cerrar-pre...', Array)
+#7 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 G:\Proyectos\localhost\credimart\yii(23): yii\base\Application->run()
+#9 {main}
+2019-06-13 19:11:17 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'CGITIC049281L'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\eleazar.garcia'
+    'LOCALAPPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Local'
+    'LOGONSERVER' => '\\\\W-APPINTRADNS03'
+    'MYSQLCONNECTOR_ASSEMBLIESPATH' => 'C:\\Program Files (x86)\\MySQL\\MySQL Connector Net 6.9.12\\Assemblies\\v4.5.2'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\INEGI\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Users\\eleazar.garcia\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\xampp\\php;C:\\xampp\\mysql\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 19 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '21'
+    'PROCESSOR_REVISION' => '1301'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'UATDATA' => 'C:\\Windows\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77'
+    'USERDNSDOMAIN' => 'INEGI.GOB.MX'
+    'USERDOMAIN' => 'INEGI'
+    'USERDOMAIN_ROAMINGPROFILE' => 'INEGI'
+    'USERNAME' => 'ELEAZAR.GARCIA'
+    'USERPROFILE' => 'C:\\Users\\eleazar.garcia'
+    'VS150PROCOMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Professional\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1560445877.009
+    'REQUEST_TIME' => 1560445877
+    'argv' => [
+        0 => 'yii'
+        1 => 'cron/cerrar-prestamos'
+    ]
+    'argc' => 2
+]
+2019-06-19 22:45:44 [-][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property 'g03_fecha' of non-object in G:\Proyectos\localhost\credimart\console\controllers\CronController.php:29
+Stack trace:
+#0 G:\Proyectos\localhost\credimart\console\controllers\CronController.php(29): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'G:\\Proyectos\\lo...', 29, Array)
+#1 [internal function]: console\controllers\CronController->actionCerrarPrestamos()
+#2 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('cerrar-prestamo...', Array)
+#5 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('cerrar-prestamo...', Array)
+#6 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('cron/cerrar-pre...', Array)
+#7 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('cron/cerrar-pre...', Array)
+#8 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 G:\Proyectos\localhost\credimart\yii(23): yii\base\Application->run()
+#10 {main}
+2019-06-19 22:45:43 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'CGITIC049281L'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\eleazar.garcia'
+    'LOCALAPPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Local'
+    'LOGONSERVER' => '\\\\W-APPINTRADNS01'
+    'mydate' => '19062019'
+    'MYSQLCONNECTOR_ASSEMBLIESPATH' => 'C:\\Program Files (x86)\\MySQL\\MySQL Connector Net 6.9.12\\Assemblies\\v4.5.2'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\INEGI\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Users\\eleazar.garcia\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\eleazar.garcia\\AppData\\Local\\atom\\bin;C:\\xampp\\php;C:\\xampp\\mysql\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 19 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '21'
+    'PROCESSOR_REVISION' => '1301'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'UATDATA' => 'C:\\Windows\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77'
+    'USERDNSDOMAIN' => 'INEGI.GOB.MX'
+    'USERDOMAIN' => 'INEGI'
+    'USERDOMAIN_ROAMINGPROFILE' => 'INEGI'
+    'USERNAME' => 'ELEAZAR.GARCIA'
+    'USERPROFILE' => 'C:\\Users\\eleazar.garcia'
+    'VS150PROCOMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Professional\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1560977143.2335
+    'REQUEST_TIME' => 1560977143
+    'argv' => [
+        0 => 'yii'
+        1 => 'cron/cerrar-prestamos'
+    ]
+    'argc' => 2
+]
+2019-06-19 22:59:37 [-][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property 'g03_fecha' of non-object in G:\Proyectos\localhost\credimart\console\controllers\CronController.php:29
+Stack trace:
+#0 G:\Proyectos\localhost\credimart\console\controllers\CronController.php(29): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'G:\\Proyectos\\lo...', 29, Array)
+#1 [internal function]: console\controllers\CronController->actionCerrarPrestamos()
+#2 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('cerrar-prestamo...', Array)
+#5 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('cerrar-prestamo...', Array)
+#6 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('cron/cerrar-pre...', Array)
+#7 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('cron/cerrar-pre...', Array)
+#8 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#9 G:\Proyectos\localhost\credimart\yii(23): yii\base\Application->run()
+#10 {main}
+2019-06-19 22:59:37 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'CGITIC049281L'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\eleazar.garcia'
+    'LOCALAPPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Local'
+    'LOGONSERVER' => '\\\\W-APPINTRADNS01'
+    'mydate' => '19062019'
+    'MYSQLCONNECTOR_ASSEMBLIESPATH' => 'C:\\Program Files (x86)\\MySQL\\MySQL Connector Net 6.9.12\\Assemblies\\v4.5.2'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\INEGI\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Users\\eleazar.garcia\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\eleazar.garcia\\AppData\\Local\\atom\\bin;C:\\xampp\\php;C:\\xampp\\mysql\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 19 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '21'
+    'PROCESSOR_REVISION' => '1301'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'UATDATA' => 'C:\\Windows\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77'
+    'USERDNSDOMAIN' => 'INEGI.GOB.MX'
+    'USERDOMAIN' => 'INEGI'
+    'USERDOMAIN_ROAMINGPROFILE' => 'INEGI'
+    'USERNAME' => 'ELEAZAR.GARCIA'
+    'USERPROFILE' => 'C:\\Users\\eleazar.garcia'
+    'VS150PROCOMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Professional\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1560977977.4319
+    'REQUEST_TIME' => 1560977977
+    'argv' => [
+        0 => 'yii'
+        1 => 'cron/cerrar-prestamos'
+    ]
+    'argc' => 2
+]
+2019-06-20 18:35:33 [-][-][-][error][Error] Error: Class 'console\controllers\Utilerias' not found in G:\Proyectos\localhost\credimart\console\controllers\CronController.php:82
+Stack trace:
+#0 [internal function]: console\controllers\CronController->actionCrearNotificaciones()
+#1 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('crear-notificac...', Array)
+#4 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('crear-notificac...', Array)
+#5 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('cron/crear-noti...', Array)
+#6 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('cron/crear-noti...', Array)
+#7 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 G:\Proyectos\localhost\credimart\yii(23): yii\base\Application->run()
+#9 {main}
+2019-06-20 18:35:33 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'CGITIC049281L'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\eleazar.garcia'
+    'LOCALAPPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Local'
+    'LOGONSERVER' => '\\\\WV-AGSDCPRO01'
+    'MYSQLCONNECTOR_ASSEMBLIESPATH' => 'C:\\Program Files (x86)\\MySQL\\MySQL Connector Net 6.9.12\\Assemblies\\v4.5.2'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\INEGI\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Users\\eleazar.garcia\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\eleazar.garcia\\AppData\\Local\\atom\\bin;C:\\xampp\\php;C:\\xampp\\mysql\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 19 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '21'
+    'PROCESSOR_REVISION' => '1301'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'UATDATA' => 'C:\\Windows\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77'
+    'USERDNSDOMAIN' => 'INEGI.GOB.MX'
+    'USERDOMAIN' => 'INEGI'
+    'USERDOMAIN_ROAMINGPROFILE' => 'INEGI'
+    'USERNAME' => 'ELEAZAR.GARCIA'
+    'USERPROFILE' => 'C:\\Users\\eleazar.garcia'
+    'VS150PROCOMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Professional\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1561048533.5638
+    'REQUEST_TIME' => 1561048533
+    'argv' => [
+        0 => 'yii'
+        1 => 'cron/crear-notificaciones'
+    ]
+    'argc' => 2
+]
+2019-06-20 18:36:06 [-][-][-][error][Error] Error: Class 'console\controllers\User' not found in G:\Proyectos\localhost\credimart\console\controllers\CronController.php:110
+Stack trace:
+#0 [internal function]: console\controllers\CronController->actionCrearNotificaciones()
+#1 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('crear-notificac...', Array)
+#4 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('crear-notificac...', Array)
+#5 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('cron/crear-noti...', Array)
+#6 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('cron/crear-noti...', Array)
+#7 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 G:\Proyectos\localhost\credimart\yii(23): yii\base\Application->run()
+#9 {main}
+2019-06-20 18:36:06 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'CGITIC049281L'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\eleazar.garcia'
+    'LOCALAPPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Local'
+    'LOGONSERVER' => '\\\\WV-AGSDCPRO01'
+    'MYSQLCONNECTOR_ASSEMBLIESPATH' => 'C:\\Program Files (x86)\\MySQL\\MySQL Connector Net 6.9.12\\Assemblies\\v4.5.2'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\INEGI\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Users\\eleazar.garcia\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\eleazar.garcia\\AppData\\Local\\atom\\bin;C:\\xampp\\php;C:\\xampp\\mysql\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 19 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '21'
+    'PROCESSOR_REVISION' => '1301'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'UATDATA' => 'C:\\Windows\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77'
+    'USERDNSDOMAIN' => 'INEGI.GOB.MX'
+    'USERDOMAIN' => 'INEGI'
+    'USERDOMAIN_ROAMINGPROFILE' => 'INEGI'
+    'USERNAME' => 'ELEAZAR.GARCIA'
+    'USERPROFILE' => 'C:\\Users\\eleazar.garcia'
+    'VS150PROCOMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Professional\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1561048566.4907
+    'REQUEST_TIME' => 1561048566
+    'argv' => [
+        0 => 'yii'
+        1 => 'cron/crear-notificaciones'
+    ]
+    'argc' => 2
+]
+2019-06-20 18:36:19 [-][-][-][error][Error] Error: Class 'console\controllers\Notificaciones' not found in G:\Proyectos\localhost\credimart\console\controllers\CronController.php:114
+Stack trace:
+#0 [internal function]: console\controllers\CronController->actionCrearNotificaciones()
+#1 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('crear-notificac...', Array)
+#4 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('crear-notificac...', Array)
+#5 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('cron/crear-noti...', Array)
+#6 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('cron/crear-noti...', Array)
+#7 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 G:\Proyectos\localhost\credimart\yii(23): yii\base\Application->run()
+#9 {main}
+2019-06-20 18:36:19 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'CGITIC049281L'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\eleazar.garcia'
+    'LOCALAPPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Local'
+    'LOGONSERVER' => '\\\\WV-AGSDCPRO01'
+    'MYSQLCONNECTOR_ASSEMBLIESPATH' => 'C:\\Program Files (x86)\\MySQL\\MySQL Connector Net 6.9.12\\Assemblies\\v4.5.2'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\INEGI\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Users\\eleazar.garcia\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\eleazar.garcia\\AppData\\Local\\atom\\bin;C:\\xampp\\php;C:\\xampp\\mysql\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 19 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '21'
+    'PROCESSOR_REVISION' => '1301'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'UATDATA' => 'C:\\Windows\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77'
+    'USERDNSDOMAIN' => 'INEGI.GOB.MX'
+    'USERDOMAIN' => 'INEGI'
+    'USERDOMAIN_ROAMINGPROFILE' => 'INEGI'
+    'USERNAME' => 'ELEAZAR.GARCIA'
+    'USERPROFILE' => 'C:\\Users\\eleazar.garcia'
+    'VS150PROCOMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Professional\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1561048579.2218
+    'REQUEST_TIME' => 1561048579
+    'argv' => [
+        0 => 'yii'
+        1 => 'cron/crear-notificaciones'
+    ]
+    'argc' => 2
+]
+2019-06-20 18:36:32 [-][-][-][error][Error] Error: Class 'console\controllers\Yii' not found in G:\Proyectos\localhost\credimart\console\controllers\CronController.php:117
+Stack trace:
+#0 [internal function]: console\controllers\CronController->actionCrearNotificaciones()
+#1 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('crear-notificac...', Array)
+#4 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('crear-notificac...', Array)
+#5 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('cron/crear-noti...', Array)
+#6 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('cron/crear-noti...', Array)
+#7 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 G:\Proyectos\localhost\credimart\yii(23): yii\base\Application->run()
+#9 {main}
+2019-06-20 18:36:32 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'CGITIC049281L'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\eleazar.garcia'
+    'LOCALAPPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Local'
+    'LOGONSERVER' => '\\\\WV-AGSDCPRO01'
+    'MYSQLCONNECTOR_ASSEMBLIESPATH' => 'C:\\Program Files (x86)\\MySQL\\MySQL Connector Net 6.9.12\\Assemblies\\v4.5.2'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\INEGI\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Users\\eleazar.garcia\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\eleazar.garcia\\AppData\\Local\\atom\\bin;C:\\xampp\\php;C:\\xampp\\mysql\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 19 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '21'
+    'PROCESSOR_REVISION' => '1301'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'UATDATA' => 'C:\\Windows\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77'
+    'USERDNSDOMAIN' => 'INEGI.GOB.MX'
+    'USERDOMAIN' => 'INEGI'
+    'USERDOMAIN_ROAMINGPROFILE' => 'INEGI'
+    'USERNAME' => 'ELEAZAR.GARCIA'
+    'USERPROFILE' => 'C:\\Users\\eleazar.garcia'
+    'VS150PROCOMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Professional\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1561048592.0238
+    'REQUEST_TIME' => 1561048592
+    'argv' => [
+        0 => 'yii'
+        1 => 'cron/crear-notificaciones'
+    ]
+    'argc' => 2
+]
+2019-07-04 02:38:09 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request: cron/Send-report in G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('Send-report', Array)
+#1 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('Send-report', Array)
+#2 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('cron/Send-repor...', Array)
+#3 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('cron/Send-repor...', Array)
+#4 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#5 G:\Proyectos\localhost\credimart\yii(23): yii\base\Application->run()
+#6 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "cron/Send-report". in G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('cron/Send-repor...', Array)
+#1 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 G:\Proyectos\localhost\credimart\yii(23): yii\base\Application->run()
+#3 {main}
+2019-07-04 02:38:08 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\XXX\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-GGQRKOT'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'ESET_OPTIONS' => '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               '
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\XXX'
+    'LOCALAPPDATA' => 'C:\\Users\\XXX\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-GGQRKOT'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\XXX\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\node-v10.15.3x64;C:\\xampp\\php;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\mysql\\bin;C:\\Users\\XXX\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\XXX\\AppData\\Local\\atom\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 10, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '8e0a'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\XXX\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\XXX\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-GGQRKOT'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-GGQRKOT'
+    'USERNAME' => 'XXX'
+    'USERPROFILE' => 'C:\\Users\\XXX'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1562200688.0466
+    'REQUEST_TIME' => 1562200688
+    'argv' => [
+        0 => 'yii'
+        1 => 'cron/Send-report'
+    ]
+    'argc' => 2
+]
+2019-07-04 02:38:20 [-][-][-][error][Error] Error: Class 'console\controllers\ReportePrestamos' not found in G:\Proyectos\localhost\credimart\console\controllers\CronController.php:129
+Stack trace:
+#0 [internal function]: console\controllers\CronController->actionSendReport()
+#1 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('send-report', Array)
+#4 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('send-report', Array)
+#5 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('cron/send-repor...', Array)
+#6 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('cron/send-repor...', Array)
+#7 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 G:\Proyectos\localhost\credimart\yii(23): yii\base\Application->run()
+#9 {main}
+2019-07-04 02:38:20 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\XXX\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-GGQRKOT'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'ESET_OPTIONS' => '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               '
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\XXX'
+    'LOCALAPPDATA' => 'C:\\Users\\XXX\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-GGQRKOT'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\XXX\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\node-v10.15.3x64;C:\\xampp\\php;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\mysql\\bin;C:\\Users\\XXX\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\XXX\\AppData\\Local\\atom\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 10, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '8e0a'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\XXX\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\XXX\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-GGQRKOT'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-GGQRKOT'
+    'USERNAME' => 'XXX'
+    'USERPROFILE' => 'C:\\Users\\XXX'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1562200700.2349
+    'REQUEST_TIME' => 1562200700
+    'argv' => [
+        0 => 'yii'
+        1 => 'cron/send-report'
+    ]
+    'argc' => 2
+]
+2019-07-04 02:38:49 [-][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\console\Application::homeUrl in G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\di\ServiceLocator.php(77): yii\base\Component->__get('homeUrl')
+#1 G:\Proyectos\localhost\credimart\common\mail\emailVerify-html.php(8): yii\di\ServiceLocator->__get('homeUrl')
+#2 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\View.php(348): require('G:\\Proyectos\\lo...')
+#3 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('G:\\Proyectos\\lo...', Array)
+#4 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\Proyectos\\lo...', Array, Object(yii\swiftmailer\Mailer))
+#5 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\mail\BaseMailer.php(302): yii\base\View->render('emailVerify-htm...', Array, Object(yii\swiftmailer\Mailer))
+#6 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\mail\BaseMailer.php(188): yii\mail\BaseMailer->render('emailVerify-htm...', Array, 'layouts/html')
+#7 G:\Proyectos\localhost\credimart\console\controllers\CronController.php(133): yii\mail\BaseMailer->compose(Array, Array)
+#8 [internal function]: console\controllers\CronController->actionSendReport()
+#9 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('send-report', Array)
+#12 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('send-report', Array)
+#13 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('cron/send-repor...', Array)
+#14 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('cron/send-repor...', Array)
+#15 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 G:\Proyectos\localhost\credimart\yii(23): yii\base\Application->run()
+#17 {main}
+2019-07-04 02:38:48 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\XXX\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-GGQRKOT'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'ESET_OPTIONS' => '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               '
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\XXX'
+    'LOCALAPPDATA' => 'C:\\Users\\XXX\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-GGQRKOT'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\XXX\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\node-v10.15.3x64;C:\\xampp\\php;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\mysql\\bin;C:\\Users\\XXX\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\XXX\\AppData\\Local\\atom\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 10, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '8e0a'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\XXX\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\XXX\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-GGQRKOT'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-GGQRKOT'
+    'USERNAME' => 'XXX'
+    'USERPROFILE' => 'C:\\Users\\XXX'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1562200728.9141
+    'REQUEST_TIME' => 1562200728
+    'argv' => [
+        0 => 'yii'
+        1 => 'cron/send-report'
+    ]
+    'argc' => 2
+]
+2019-07-04 02:40:18 [-][-][-][error][Swift_TransportException] Swift_TransportException: Process could not be started [El sistema no puede encontrar la ruta especificada.
+] in G:\Proyectos\localhost\credimart\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:299
+Stack trace:
+#0 G:\Proyectos\localhost\credimart\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(54): Swift_Transport_StreamBuffer->establishProcessConnection()
+#1 G:\Proyectos\localhost\credimart\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#2 G:\Proyectos\localhost\credimart\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\SendmailTransport.php(50): Swift_Transport_AbstractSmtpTransport->start()
+#3 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2-swiftmailer\src\Mailer.php(113): Swift_Transport_SendmailTransport->start()
+#4 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2-swiftmailer\src\Mailer.php(156): yii\swiftmailer\Mailer->getSwiftMailer()
+#5 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\mail\BaseMailer.php(263): yii\swiftmailer\Mailer->sendMessage(Object(yii\swiftmailer\Message))
+#6 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\mail\BaseMessage.php(49): yii\mail\BaseMailer->send(Object(yii\swiftmailer\Message))
+#7 G:\Proyectos\localhost\credimart\console\controllers\CronController.php(139): yii\mail\BaseMessage->send()
+#8 [internal function]: console\controllers\CronController->actionSendReport()
+#9 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('send-report', Array)
+#12 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('send-report', Array)
+#13 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('cron/send-repor...', Array)
+#14 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('cron/send-repor...', Array)
+#15 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 G:\Proyectos\localhost\credimart\yii(23): yii\base\Application->run()
+#17 {main}
+2019-07-04 02:40:16 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\XXX\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-GGQRKOT'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'ESET_OPTIONS' => '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               '
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\XXX'
+    'LOCALAPPDATA' => 'C:\\Users\\XXX\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-GGQRKOT'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\XXX\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\node-v10.15.3x64;C:\\xampp\\php;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\mysql\\bin;C:\\Users\\XXX\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\XXX\\AppData\\Local\\atom\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 10, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '8e0a'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\XXX\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\XXX\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-GGQRKOT'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-GGQRKOT'
+    'USERNAME' => 'XXX'
+    'USERPROFILE' => 'C:\\Users\\XXX'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1562200816.4218
+    'REQUEST_TIME' => 1562200816
+    'argv' => [
+        0 => 'yii'
+        1 => 'cron/send-report'
+    ]
+    'argc' => 2
+]
+2019-07-04 02:40:21 [-][-][-][error][Swift_TransportException] Swift_TransportException: Process could not be started [El sistema no puede encontrar la ruta especificada.
+] in G:\Proyectos\localhost\credimart\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:299
+Stack trace:
+#0 G:\Proyectos\localhost\credimart\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(54): Swift_Transport_StreamBuffer->establishProcessConnection()
+#1 G:\Proyectos\localhost\credimart\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#2 G:\Proyectos\localhost\credimart\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\SendmailTransport.php(50): Swift_Transport_AbstractSmtpTransport->start()
+#3 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2-swiftmailer\src\Mailer.php(113): Swift_Transport_SendmailTransport->start()
+#4 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2-swiftmailer\src\Mailer.php(156): yii\swiftmailer\Mailer->getSwiftMailer()
+#5 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\mail\BaseMailer.php(263): yii\swiftmailer\Mailer->sendMessage(Object(yii\swiftmailer\Message))
+#6 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\mail\BaseMessage.php(49): yii\mail\BaseMailer->send(Object(yii\swiftmailer\Message))
+#7 G:\Proyectos\localhost\credimart\console\controllers\CronController.php(139): yii\mail\BaseMessage->send()
+#8 [internal function]: console\controllers\CronController->actionSendReport()
+#9 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('send-report', Array)
+#12 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('send-report', Array)
+#13 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('cron/send-repor...', Array)
+#14 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('cron/send-repor...', Array)
+#15 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 G:\Proyectos\localhost\credimart\yii(23): yii\base\Application->run()
+#17 {main}
+2019-07-04 02:40:21 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\XXX\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-GGQRKOT'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'ESET_OPTIONS' => '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               '
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\XXX'
+    'LOCALAPPDATA' => 'C:\\Users\\XXX\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-GGQRKOT'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\XXX\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\node-v10.15.3x64;C:\\xampp\\php;C:\\Program Files\\TortoiseSVN\\bin;C:\\xampp\\mysql\\bin;C:\\Users\\XXX\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\XXX\\AppData\\Local\\atom\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 142 Stepping 10, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '8e0a'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\XXX\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\XXX\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-GGQRKOT'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-GGQRKOT'
+    'USERNAME' => 'XXX'
+    'USERPROFILE' => 'C:\\Users\\XXX'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1562200821.6843
+    'REQUEST_TIME' => 1562200821
+    'argv' => [
+        0 => 'yii'
+        1 => 'cron/send-report'
+    ]
+    'argc' => 2
+]
+2019-07-04 22:26:54 [-][-][-][error][Swift_TransportException] Swift_TransportException: Process could not be started [El sistema no puede encontrar la ruta especificada.
+] in G:\Proyectos\localhost\credimart\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php:299
+Stack trace:
+#0 G:\Proyectos\localhost\credimart\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\StreamBuffer.php(54): Swift_Transport_StreamBuffer->establishProcessConnection()
+#1 G:\Proyectos\localhost\credimart\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\AbstractSmtpTransport.php(143): Swift_Transport_StreamBuffer->initialize(Array)
+#2 G:\Proyectos\localhost\credimart\vendor\swiftmailer\swiftmailer\lib\classes\Swift\Transport\SendmailTransport.php(50): Swift_Transport_AbstractSmtpTransport->start()
+#3 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2-swiftmailer\src\Mailer.php(113): Swift_Transport_SendmailTransport->start()
+#4 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2-swiftmailer\src\Mailer.php(156): yii\swiftmailer\Mailer->getSwiftMailer()
+#5 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\mail\BaseMailer.php(263): yii\swiftmailer\Mailer->sendMessage(Object(yii\swiftmailer\Message))
+#6 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\mail\BaseMessage.php(49): yii\mail\BaseMailer->send(Object(yii\swiftmailer\Message))
+#7 G:\Proyectos\localhost\credimart\console\controllers\CronController.php(139): yii\mail\BaseMessage->send()
+#8 [internal function]: console\controllers\CronController->actionSendReport()
+#9 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#11 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('send-report', Array)
+#12 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('send-report', Array)
+#13 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('cron/send-repor...', Array)
+#14 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('cron/send-repor...', Array)
+#15 G:\Proyectos\localhost\credimart\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 G:\Proyectos\localhost\credimart\yii(23): yii\base\Application->run()
+#17 {main}
+2019-07-04 22:26:53 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'CGITIC049281L'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\eleazar.garcia'
+    'LOCALAPPDATA' => 'C:\\Users\\eleazar.garcia\\AppData\\Local'
+    'LOGONSERVER' => '\\\\W-APPINTRADNS02'
+    'MYSQLCONNECTOR_ASSEMBLIESPATH' => 'C:\\Program Files (x86)\\MySQL\\MySQL Connector Net 6.9.12\\Assemblies\\v4.5.2'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\INEGI\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Users\\eleazar.garcia\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\eleazar.garcia\\AppData\\Local\\atom\\bin;C:\\xampp\\php;C:\\xampp\\mysql\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 19 Stepping 1, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '21'
+    'PROCESSOR_REVISION' => '1301'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ELEAZA~1.GAR\\AppData\\Local\\Temp'
+    'UATDATA' => 'C:\\Windows\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77'
+    'USERDNSDOMAIN' => 'INEGI.GOB.MX'
+    'USERDOMAIN' => 'INEGI'
+    'USERDOMAIN_ROAMINGPROFILE' => 'INEGI'
+    'USERNAME' => 'ELEAZAR.GARCIA'
+    'USERPROFILE' => 'C:\\Users\\eleazar.garcia'
+    'VS150PROCOMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Professional\\Common7\\Tools\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1562272012.9407
+    'REQUEST_TIME' => 1562272012
+    'argv' => [
+        0 => 'yii'
+        1 => 'cron/send-report'
+    ]
+    'argc' => 2
+]

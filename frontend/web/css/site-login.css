@@ -1,0 +1,22 @@
+body{
+	background-image: url("../img/backgorund.jpg") !important;
+	background-repeat: no-repeat !important;
+	background-color: transparent !important;
+	background-attachment: fixed !important;
+	background-size: cover !important;
+}
+
+.login-box-body {
+    background: #ffffff3b !important;
+    color: #666666e0 !important;
+}
+
+.form-control {
+	color: #777777 !important;
+	background-color: #fff0 !important;
+	border-color: #77777782 !important;
+}
+
+.btn-primary {
+	background-color: #3c8dbc99 !important;
+}
